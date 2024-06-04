@@ -1,6 +1,6 @@
 # Mushroom Madness!Toxicity Safety Guide 
-## Pattern Prophets Team Members: 
-## Lauren Ables-Torres, Berenice Ramos, Rachel Puzycki, Holt Jones
+### Pattern Prophets Team Members: 
+### Lauren Ables-Torres, Berenice Ramos, Rachel Puzycki, Holt Jones
 
 ## Project Description: 
 This project aims to develop a predictive classification model using different algorithms including Logistic Regression, Random Forest, and ___ to classify various attributes of mushrooms. Using the Mushroom dataset from UC Irvine Machine Learning Repository, we will focus on predicting the edibility of mushrooms based on features that include cap shape, cap color, odor, habitat, and others.
