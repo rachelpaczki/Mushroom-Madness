@@ -1,4 +1,4 @@
-# Mushroom Madness!: ## Toxicity Safety Guide 
+# Mushroom Madness!: Toxicity Safety Guide 
 ### Pattern Prophets Team Members: 
 ### Lauren Ables-Torres, Berenice Ramos, Rachel Puzycki, Holt Jones
 
