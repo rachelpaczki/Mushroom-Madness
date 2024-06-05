@@ -11,6 +11,7 @@
             border: 1px solid #ccc;
             padding: 10px;
             overflow-y: auto;
+            align-items: right;
         }
         #user-input {
             width: 80%;
@@ -22,15 +23,17 @@
             margin: 10px 0;
         }
         .user-message {
-            text-align: middle;
+            text-align: right;
         }
         .bot-message {
-            text-align: middle;
+            text-align: right;
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="chatbox"></div>
+        <h1>Mushroom Madness Toxicity ChatBox</h1>
     <input type="text" id="user-input" placeholder="Type your mushroom question here...">
     <button id="send-button">Send Question</button>
 
@@ -70,8 +73,7 @@
             chatbox.appendChild(messageDiv);
             chatbox.scrollTop = chatbox.scrollHeight;
         }
-    </script>
-    <script src="mushroom.js"></script>
+        </script>
+        <script src="mushroom.js"> </script>
 </body>
 </html>
-
