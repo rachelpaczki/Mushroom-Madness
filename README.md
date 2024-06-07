@@ -22,3 +22,7 @@ Matplotlib chart of count (edible vs poisonous?)
 ## Programs Used:
 Python Pandas/Matplotlib
 js/html/css (maybe for chatbox)**
+
+License
+------------------------
+This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license.
