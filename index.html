@@ -3,77 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
-    <style>
-        #chatbox {
-            width: 300px;
-            height: 400px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            overflow-y: auto;
-            align-items: right;
-        }
-        #user-input {
-            width: 80%;
-        }
-        #send-button {
-            width: 18%;
-        }
-        .message {
-            margin: 10px 0;
-        }
-        .user-message {
-            text-align: right;
-        }
-        .bot-message {
-            text-align: right;
-        }
-    </style>
+    <title>Photo Slideshow</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="chatbox"></div>
-        <h1>Mushroom Madness Toxicity ChatBox</h1>
-    <input type="text" id="user-input" placeholder="Type your mushroom question here...">
-    <button id="send-button">Send Question</button>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <script>
-        document.getElementById('send-button').addEventListener('click', sendMessage);
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="cap-color.jpg" style="width:100%">
+      <div class="text">cap-color</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="gill-color.jpg" style="width:100%">
+      <div class="text">gill-color</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="spore-color.jpg" style="width:100%">
+      <div class="text">spore-color</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="stalk-color-above-ring.jpg" style="width:100%">
+      <div class="text">stalk-color-above-ring</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="stalk-color-below-ring.jpg" style="width:100%">
+      <div class="text">stalk-color-below-ring</div>
+    </div>
 
-        function sendMessage() {
-            const input = document.getElementById('user-input');
-            const message = input.value;
-            if (message.trim() === '') return;
-
-            displayMessage(message, 'user');
-            input.value = '';
-
-            fetch('/chat', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ question: message })
-            })
-            .then(response => response.json())
-            .then(data => {
-                displayMessage(data.response, 'bot');
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                displayMessage('Sorry, something went wrong.', 'bot');
-            });
-        }
-
-        function displayMessage(message, sender) {
-            const chatbox = document.getElementById('chatbox');
-            const messageDiv = document.createElement('div');
-            messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
-            messageDiv.textContent = message;
-            chatbox.appendChild(messageDiv);
-            chatbox.scrollTop = chatbox.scrollHeight;
-        }
-        </script>
-        <script src="mushroom.js"> </script>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+    <script src="mushroom.js"></script>
 </body>
 </html>

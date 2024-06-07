@@ -1,85 +1,87 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-#chat-container {
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-    height: 500px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-#chatbox {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    background-color: #f4f4f9;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.message {
-    margin: 10px 0;
-    padding: 10px 20px;
-    border-radius: 20px;
-    max-width: 70%;
-    word-wrap: break-word;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.user-message {
-    background-color: #007bff;
-    color: #fff;
-    align-self: flex-end;
-    border-bottom-right-radius: 0;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.bot-message {
-    background-color: #e9ecef;
-    color: #333;
-    align-self: flex-start;
-    border-bottom-left-radius: 0;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-#input-container {
-    display: flex;
-    border-top: 1px solid #ddd;
-    padding: 10px;
-    background-color: #fff;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-#user-input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-right: 10px;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-#user-input:focus {
-    outline: none;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-#send-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-#send-button:hover {
-    background-color: #0056b3;
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

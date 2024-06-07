@@ -1,34 +1,14 @@
-document.getElementById('send-button').addEventListener('click', sendMessage);
+let slideIndex = 0;
+showSlides();
 
-function sendMessage() {
-    const input = document.getElementById('user-input');
-    const message = input.value.trim();
-    if (message === '') return;
-
-    displayMessage(message, 'user');
-    input.value = '';
-
-    const response = getResponse(message);
-    displayMessage(response, 'bot');
-}
-
-function getResponse(message) {
-    const responses = {
-        "hello": "Hi there! How can I help you today?",
-        "how are you": "I am just a bot, but I am doing great!",
-        "bye": "Goodbye! Have a great day!",
-        "what is your accuracy score?" : "Mushroom Madness! has a accuracy of 94.91%"
-    };
-
-    const lowerCaseMessage = message.toLowerCase();
-    return responses[lowerCaseMessage] || "Sorry, I do not understand that question.";
-}
-
-function displayMessage(message, sender) {
-    const chatbox = document.getElementById('chatbox');
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'bot-message');
-    messageDiv.textContent = message;
-    chatbox.appendChild(messageDiv);
-    chatbox.scrollTop = chatbox.scrollHeight;
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
