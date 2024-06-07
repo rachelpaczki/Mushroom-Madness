@@ -7,6 +7,7 @@ Installation and Requirements
 Acknowledgment
 ---------------
 Northwestern Bootcamp 
+
 Youtube: Pathshala "Plotting Accuracy and Loss Graph for Trained Model using Matplotlib with History Callback"
 
 License
