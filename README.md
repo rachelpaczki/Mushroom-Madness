@@ -5,11 +5,17 @@ Mushroom-Madness
 Installation and Requirements
 ---------------------------
 Python
+
 LogisticRegression
+
 RandomForestClassifier
+
 Pandas
+
 Pathlib
+
 Matplotlib
+
 
 
 Acknowledgment
