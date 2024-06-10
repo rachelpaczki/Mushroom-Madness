@@ -1,6 +1,6 @@
 Mushroom-Madness
 ----------------------
-
+This project aims to develop a predictive classification model using different algorithms including Logistic Regression, Random Forest, and MueralNetworks to classify various attributes of mushrooms. Using the Mushroom dataset from UC Irvine Machine Learning Repository, focusing on predicting the edibility of mushrooms based on features that include cap shape, cap color, odor, habitat, and others.
 
 Installation and Requirements
 ---------------------------
