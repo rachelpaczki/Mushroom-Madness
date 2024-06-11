@@ -30,6 +30,7 @@ For this project we decided to utilize data compiled by the UC Irvine Machine Le
 ## Model Visualization
 ### Random Forest Model
 ![random-forest](Images/random-forest.jpg)
+![image](https://github.com/rachelpaczki/Mushroom-Madness/assets/152629824/2a28f4fe-ef2b-413f-b0bc-d4df83c9b6b4)
 A Random Forest algorithm was trained to learn mushroom features and predict edibility or poisonous. 100 decision trees, each comprised of a data point from the training set, were used to train the model with random state equaling 42. There was an accuracy, prediction, and recall of 1.00 with 1257 data points predicting 0, edible, and 1181 data points supporting 1, poisonous. 
 
 ### Neutral Networks
