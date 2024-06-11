@@ -39,17 +39,17 @@ A Random Forest algorithm was trained to learn mushroom features and predict edi
 ![neur-net-2](Images/neural-networks-2.jpg)
 A NeuralNetwork model was used to predict the classification of mushrooms wheteher posinous or edible. In the NeuralNetwork model the accuracy was found to be 1.00 and the loss of 0.0026. The graphs were used to visualize the accuracy and loss with each epoch.
 
-### Linear Regression
+### Logistic Regression
 ![lin-reg-1](Images/linear-regress-1.jpg)
 ![lin-reg-2](Images/linear-regress-2.jpg)
 ![lin-reg-3](Images/linear-regress-3.jpg)
-(Write Here)
+Here, we tried lostic regression modelling to test the accuracy. A Onehotencoder was need to manipulate our data, as the outcomes were binary and categorical poisonous or not. The lostic regression modeling came up with 1.00 or perfect accuracy. Again, highlighting the comprehensive nature of our dataset and it's keen predictive power. This model was trained on all different amounts of data in the dataset. 10%, 20% 70% etc and each time the test was ran perfect accuracy was seen. The twenty-two features of this data are very comprehensive in predicted poisonous or not. 
 
 ### SVM
 ![svm1](Images/svc1.jpg)
 ![svm2](Images/svc2.jpg)
 ![svm3](Images/svc3.jpg)
-(Write Here)
+Here, svc or support vectorization classification was used to determine the predictive accuracy of the model and again 100% accuracy or an accuracy score of 1.0 was observed. Further hihglighting the explanatory power of this data. 
 
 ## Challenges/Conclusion
 Although this dataset was easy to use, it was made in part to be used to teach students like ourselves different ways of achieving 100% accuracy in our testing. 
