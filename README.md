@@ -44,9 +44,9 @@ A NeuralNetwork model was used to predict the classification of mushrooms wheteh
 ![lin-reg-2](Images/linear-regress-2.jpg)
 ![lin-reg-3](Images/linear-regress-3.jpg)
 
-Here, we tried lostic regression modelling to test the accuracy. A Onehotencoder was need to manipulate our data, as the outcomes were binary and categorical poisonous or not. The lostic regression modeling came up with 1.00 or perfect accuracy. Again, highlighting the comprehensive nature of our dataset and it's keen predictive power. This model was trained on all different amounts of data in the dataset. 10%, 20% 70% etc and each time the test was ran perfect accuracy was seen. The twenty-two features of this data are very comprehensive in predicted poisonous or not. 
+Here, we tried losgistic regression modelling to test the accuracy. A "Onehotencoder" was needed to create a pipline and  manipulate our data, as the outcomes were binary and categorical poisonous or not. The logistic regression modeling came up with 1.00 or perfect accuracy. Again, highlighting the comprehensive nature of our dataset and it's keen predictive power. This model was trained on all different amounts of data in the dataset. 10%, 20% 70% etc and each time the test was ran perfect accuracy was seen. The twenty-two features of this data are very comprehensive in predicting poisonous or not. 
 
-### SVM
+### SVC
 ![svm1](Images/svc1.jpg)
 ![svm2](Images/svc2.jpg)
 ![svm3](Images/svc3.jpg)
