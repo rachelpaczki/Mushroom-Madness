@@ -45,10 +45,10 @@ A NeuralNetwork model was used to predict the classification of mushrooms wheteh
 ![lin-reg-3](Images/linear-regress-3.jpg)
 (Write Here)
 
-### SVC
-![svc1](Images/svc1.jpg)
-![svc2](Images/svc2.jpg)
-![svc3](Images/svc3.jpg)
+### SVM
+![svm1](Images/svc1.jpg)
+![svm2](Images/svc2.jpg)
+![svm3](Images/svc3.jpg)
 (Write Here)
 
 ## Challenges/Conclusion
