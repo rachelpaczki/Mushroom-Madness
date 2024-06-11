@@ -16,16 +16,17 @@ For this project we decided to utilize data compiled by the UC Irvine Machine Le
 
 ## Data Visualization
 ### Colors of Mushroom Attributes v Toxicity
-![cap-color](Images/cap-color.jpg)
-![gill-color](Images/gill-color.jpg)
-![stalk-color-above-ring](Images/stalk-color-above-ring.jpg)
-![stalk-color-below-ring](Images/stalk-color-below-ring.jpg)
+![cap-color](Images/cap-color.jpg) ![gill-color](Images/gill-color.jpg)
+![stalk-color-above-ring](Images/stalk-color-above-ring.jpg) ![stalk-color-below-ring](Images/stalk-color-below-ring.jpg) 
 ![spore-color](Images/spore-color.jpg)
+
+Color seems like it may be a good indicator for toxicity, but color is not the best indicator for determine toxicity on it's own. There are a few outliers, with gill-color and spore-print-color showing promising indicators for toxicity (i.e. gill-color that is "buff" color is mostly toxic, "spore-print-color" has overall higher indicators).
 
 ### Bruising, Odor, and Population Types v. Toxicity
 ![bruising](Images/bruising.jpg)
 ![odor](Images/odor.jpg)
-![population-classes](Images/population-classes.jpg)
+
+On initial inspection, these variables (bruising, odor, and population-types) have a more clear indication that certain variables have a higher likelihood of being toxic. Bruising and odor are perfect examples, with bruising mushrooms likely being edible, and non-bruising being poisonous. The same goes for odor, with foul/negatively-associated odors being poisonous, with no smell being mostly edible.
 
 ## Model Visualization
 ### Random Forest Model
