@@ -36,7 +36,7 @@ A Random Forest algorithm was trained to learn mushroom features and predict edi
 ### Neutral Networks
 ![neur-net-1](Images/neutal-networks-1.jpg)
 ![neur-net-2](Images/neural-networks-2.jpg)
-(Write Here)
+A NueralNetwork model was used to predict the classification of mushrooms wheteher posinous or edible. In the NueralNetwork model the accuracy was found to be 1.00 and the loss of 0.0026. The graphs were used to visualize the accuracy and loss with each epoch.
 
 ### Linear Regression
 ![lin-reg-1](Images/linear-regress-1.jpg)
